@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rakesh Mallipeddi's Website</title>
+<title>Rakesh Mallipeddi - Research</title>
 
+<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
+  <body style="font-family:Varela Round;  ">
 
-  <body style="font-family:helvetica, sans-serif;  ">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body {margin:0;font-size:12.0pt}
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
 
-ull {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #A7B1B7;
-    position: fixed;
-    top: 0;
-     width: 100%;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background-color:#A7B1B7;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: #BA0C2F;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  color: #BA0C2F;
+  background-color: white;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-width:2px;
 
 }
 
-lii {
-    float: left;
-}
 
-lii a {
+.sidebar c {
     display: block;
     color: #BA0C2F;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
     text-decoration: none;
+	font-size:16pt;
 }
 
-lii a:hover:not(.active) {
-    background-color: #111;
+.sidebar a:hover:not(.active) {
+  background-color: #f2eeed;
+    border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  color: #BA0C2F;
 }
 
-lii c {
-    display: block;
-    color: #BA0C2F;
+div.content {
+  margin-left: 250px;
+  padding: 5px 16px;
+  height: 1200px;
+  background-color:  white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.active {
-    background-color: #BA0C2F;
-	color: white;
+    float: none;
+  }
 }
 </style>
-<style>
-
-hr { 
-    display: block;
-    margin-top: 0.25em;
-    margin-bottom: 0.25em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-	
-} 
-
-</style>
-
 </head>
 <body>
 
+<div class="sidebar">
+ <span
+style='position:absolute;left:39px;top:25px;'><img src="index_files/shot.png" width="196" height="202">
+ <c><b>RAKESH MALLIPEDDI</b></c>
+
+  <a  href="home.html">HOME</a>
+  <a  href="research.html">RESEARCH</a>
+  <a href="insights.html">INSIGHTS</a>
+  <a href="teaching.html">TEACHING</a>
+  <a class="active" href="service.html">SERVICE</a>
+  <a href="awards.html">AWARDS & HONORS</a>
+
+</div>
+   
+	  
+<div class="content">
  
-
-<body id="service">
-
-<ull>
-  <lii><c><b>RAKESH MALLIPEDDI</b></c></lii>
-  <lii> <a href="home.html">HOME</a></lii>
-  <lii><a href="research.html">RESEARCH</a></lii>
-  <lii><a href="insights.html"> INSIGHTS</a></lii>
-
-  <lii><a href="teaching.html">TEACHING</a> </lii>
-	<lii><a  class="active" href="service.html">SERVICE</a></lii>
-    <lii><a href="awards.html">AWARDS & HONORS</a></lii>
-
-</ull>
-
-
- 
-
-
-
-
-<div style="padding:205px;margin-top:-160px;background-color:#FFFFFF;height:1500px;">
-
 <h3 style='margin-bottom:-.00in;color: #BA0C2F;font-size:14.0pt '> EDITORIAL POSITIONS </h3>
  
  <ul style="font-size:12pt; line-height: 1.5;">
@@ -209,9 +217,12 @@ hr {
 
    <li>  25th Workshop on Information Technologies and Systems, Texas, December 2015 
  </ul>  
+  
+
+
+<footer  align="center"><p  style='  font-size:10.0pt; color:#A7B1B7 '>&copy; 2023 Rakesh Mallipeddi </footer>
+  </div>
  
- </div>
- <footer  align="center"><p  style='  font-size:10.0pt; color:#A7B1B7 '>&copy; 2023 Rakesh Mallipeddi </footer>
 
 </body>
 </html>
