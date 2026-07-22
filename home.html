@@ -1,192 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakesh Mallipeddi — Operations & Business Analytics, Fisher College of Business</title>
+<meta name="description" content="Rakesh Mallipeddi is an Assistant Professor of Operations and Business Analytics at the Fisher College of Business, The Ohio State University. Research on online social networks, technology management, and social responsibility.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVEP2RVLBD"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-KVEP2RVLBD');
 </script>
-<link href='https://fonts.googleapis.com/css?family=Varela Round' rel='stylesheet'>
-  <body style="font-family:Varela Round;  ">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-}
-
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 250px;
-  background-color:#A7B1B7;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
-
-.sidebar a {
-  display: block;
-  color: #BA0C2F;
-  padding: 16px;
-  text-decoration: none;
-}
- 
-.sidebar a.active {
-  color: #BA0C2F;
-  background-color: white;
-  border-top-left-radius: 999px;
-  border-bottom-left-radius: 999px;
-  border-width:2px;
-
-}
-
-
-.sidebar c {
-    display: block;
-    color: #BA0C2F;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-	font-size:16pt;
-}
-
-.sidebar a:hover:not(.active) {
-  background-color: #f2eeed;
-    border-top-left-radius: 999px;
-  border-bottom-left-radius: 999px;
-  color: #BA0C2F;
-}
-
-div.content {
-  margin-left: 250px;
-  padding: 5px 16px;
-  height: 1800px;
-  background-color:  white;
-}
-
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
-
-}
-
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
-}
-</style>
 </head>
 <body>
 
-<div class="sidebar">
- 
- <c><b>RAKESH MALLIPEDDI</b></c>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="home.html">Rakesh Mallipeddi<span class="dot">.</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('navlinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links" id="navlinks">
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="industry.html">Industry</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="awards.html">Awards</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <a  class="active" href="home.html">HOME</a>
-  <a  href="research.html">RESEARCH</a>
-  <a href="insights.html">INSIGHTS</a>
-  <a  href="industry.html">INDUSTRY EXPERIENCE</a>
-   <a href="teaching.html">TEACHING</a>
-  <a href="service.html">SERVICE</a>
-  <a href="awards.html">AWARDS & HONORS</a>
-</div>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <p class="eyebrow">Fisher College of Business · The Ohio State University</p>
+      <h1>Rakesh Mallipeddi</h1>
+      <p class="role">Assistant Professor of Operations &amp; Business Analytics</p>
+      <p class="affil">
+        Vice President of Education, POMS &nbsp;·&nbsp;
+        <a href="mailto:mallipeddi.1@osu.edu">mallipeddi.1@osu.edu</a>
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="research.html">View Research</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=dWTKDv8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn" href="https://fisher.osu.edu/people/mallipeddi.1" target="_blank" rel="noopener">Fisher Profile</a>
+        <a class="btn" href="https://www.linkedin.com/in/rakesh-mallipeddi-7b3858b9" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="assets/headshot-formal.jpg" alt="Rakesh Mallipeddi">
+    </div>
+  </div>
+</section>
 
-<div class="content">
-<div>
+<!-- ===== STATS ===== -->
+<section class="stats">
+  <div class="stats-inner">
+    <div class="stat"><div class="num">6</div><div class="lbl">Journal Publications</div></div>
+    <div class="stat"><div class="num">7</div><div class="lbl">Working Papers</div></div>
+    <div class="stat"><div class="num">14</div><div class="lbl">Awards &amp; Honors</div></div>
+    <div class="stat"><div class="num">2</div><div class="lbl">Editorial Boards</div></div>
+  </div>
+</section>
 
- 
-<picture>
-  <source srcset="index_files/shot2.jpg" media="(min-width: 700px)"/>
-  <img src="index_files/shot3.jpg" alt="example"/>
-</picture>
-</div>
+<main>
+  <!-- ===== ABOUT ===== -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">About</h2>
+      <div class="prose" style="max-width:820px;">
+        <p class="lead">Rakesh Mallipeddi is an Assistant Professor in the Operations and Business Analytics Department at the Fisher College of Business, The Ohio State University. His research examines how firms can effectively manage innovation and technology, improve their service and marketing operations, and attract customers to their products and services.</p>
+        <p>His work spans <strong>online social networks, technology management, and social responsibility</strong>, and has been published in leading academic journals including <em>Management Science</em>, <em>Information Systems Research</em>, <em>MIS Quarterly</em>, <em>Production and Operations Management</em>, and the <em>Journal of Operations Management</em>.</p>
+        <p>His research has received multiple honors, including the INFORMS Information Systems Society Gordon B. Davis Young Scholar Award, the DSI Carol J. Latta Memorial Early Career Research Award, the Elwood Buffa Doctoral Dissertation Award, the IBM Service Science Best Student Paper Award, and the Senator Gramm Award for Scholarly Excellence. He serves on the editorial boards of the <em>Decision Sciences Journal</em> and <em>Production and Operations Management</em>.</p>
+        <p>Rakesh is currently serving as an elected <strong>Vice President of Education</strong> for the Production and Operations Management Society (POMS). He previously served as VP of Communications and social media coordinator for POMS, was program chair for the 2022 Annual POMS Conference, and Vice President for Sponsorships for the 2021 and 2022 Annual POMS Conferences.</p>
+        <p>He previously served as an Assistant Professor in the Management Science area at the Freeman School of Business, Tulane University. He earned his Ph.D. in business administration — with a concentration in information and operations management — from Mays Business School, Texas A&amp;M University. Prior to his academic career, Rakesh managed the operations of manufacturing companies.</p>
+      </div>
+    </div>
+  </section>
 
- <h2  style='margin-top:.300in;margin-left:0.0in;font-size:18.0pt'> <font color=#BA0C2F> RAKESH MALLIPEDDI </font> </h2> <i class="fa-brands fa-linkedin"></i>
+  <!-- ===== EDUCATION & EXPERIENCE ===== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="grid-2">
+        <div>
+          <h2 class="section-title">Education</h2>
+          <div class="tl">
+            <div class="tl-item">
+              <div class="role">Ph.D., Business Administration</div>
+              <div class="org">Mays Business School, Texas A&amp;M University</div>
+              <div class="when">2019 · Information &amp; Operations Management</div>
+            </div>
+            <div class="tl-item">
+              <div class="role">M.S., Industrial &amp; Systems Engineering</div>
+              <div class="org">Oakland University</div>
+              <div class="when">2008</div>
+            </div>
+            <div class="tl-item">
+              <div class="role">B.S., Mechanical Engineering</div>
+              <div class="org">The Ohio State University</div>
+              <div class="when">2005</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="section-title">Academic Appointments</h2>
+          <div class="tl">
+            <div class="tl-item">
+              <div class="role">Assistant Professor</div>
+              <div class="org">Fisher College of Business, The Ohio State University</div>
+              <div class="when">2022 – Present</div>
+            </div>
+            <div class="tl-item">
+              <div class="role">Assistant Professor</div>
+              <div class="org">A.B. Freeman School of Business, Tulane University</div>
+              <div class="when">2019 – 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<p style='margin-left:0.0in;font-size:14.0pt'> Assistant Professor - Operations   and Business Analytics </p>
- 
- <p style='margin-left:.0in;font-size:14.0pt'>   Fisher College of Business, The Ohio State University </p>
- 
+  <!-- ===== NEWS ===== -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title">News &amp; Updates</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="meta">2024 · Phoenix, USA</div>
+          <h3>DSI Carol J. Latta Memorial Early Career Research Award</h3>
+          <p>Received at the 2024 Annual DSI Meeting in Phoenix.</p>
+          <div class="pub-meta">
+            <a class="badge badge-link" href="assets/news-dsi-award.jpg" target="_blank" rel="noopener">Photo</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta">2024 · Seattle, USA</div>
+          <h3>INFORMS ISS Gordon B. Davis Young Scholar Award</h3>
+          <p>Received at the 2024 Annual INFORMS Meeting in Seattle.</p>
+          <div class="pub-meta">
+            <a class="badge badge-link" href="https://fisher.osu.edu/news/mallipeddi-named-gordon-b.-davis-young-scholar-award-recipient" target="_blank" rel="noopener">Fisher News</a>
+            <a class="badge badge-link" href="assets/news-informs-award-1.jpg" target="_blank" rel="noopener">Photo 1</a>
+            <a class="badge badge-link" href="assets/news-informs-award-2.jpg" target="_blank" rel="noopener">Photo 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-<p style='margin-left:0.0in;margin-bottom:0.150in;font-size:14.0pt'> Email: mallipeddi.1@osu.edu</p>
-<p style='margin-left:0.0in;margin-bottom:0.150in;font-size:14.0pt'> <a href="https://fisher.osu.edu/people/mallipeddi.1"> Department Website </a>  |
- <a href="https://scholar.google.com/citations?user=dWTKDv8AAAAJ&hl=en&oi=ao"> Google Scholar </a> |  <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2630173"> SSRN </a> | 
- <a href="https://www.linkedin.com/in/rakesh-mallipeddi-7b3858b9">LinkedIn </a></p>
-
-<br>  
-
-
-<h3 style='margin-top:0.00in;margin-bottom:-.00in;color: #BA0C2F;font-size:14.0pt '> ABOUT </h3>
- 
-<p style='font-size:12pt; line-height: 1.5;'> Rakesh Mallipeddi is an Assistant Professor in the Operations and Analytics Department at the Fisher College of Business, The Ohio State University. His research interests primarily lie in Online Social Networks, Technology Management, and Social Responsibility. Specifically, he primarily analyzes how firms can effectively manage innovation and technology, improve their service and marketing operations, and attract customers to their products and services. <br> <br>
-
-Rakesh's research has been published in leading academic journals, including Management Science, Information Systems Research, Production and Operations Management, and the Journal of Operations Management. His research received multiple awards, including the INFORMS Information Systems Society Gordon B. Davis Young Scholar Award, the DSI Carol J. Latta Memorial Early Career Research Award,  the Elwood Buffa Doctoral Dissertation Award, the IBM Service Science Best Student Paper Award, and the Senator Gramm Award for Scholarly Excellence. He is on the editorial board of Decision Sciences Journal, and Production and Operations Management.  <br> <br>
-
-Rakesh is currently serving as an elected Vice President of Education for the Production and Operations Management Society (POMS). He previously served as VP of Communications and social media coordinator for POMS. He served as program chair for the 2022 Annual POMS Conference and Vice President for Sponsorships for the 2021 and 2022 Annual POMS Conferences.  <br> <br>
-
-Rakesh previously served as an Assistant Professor in the Management Science area at the Freeman School of Business, Tulane University. He earned his Ph.D. in business administration (with a concentration in information and operations management) from Mays Business School, Texas A&M University. Prior to his academic career, Rakesh managed the operations of manufacturing companies. </p>
-
-<br>
- <h3 style='margin-top:.00in;margin-bottom:-.00in;color: #BA0C2F;font-size:14.0pt '> EDUCATION </h3>
- 
- 
-
-<p  style='margin-left:.0in;font-size:12.0pt; line-height: 1.5;'> <b>Ph.D.  Business Administration</b>, Mays Business School, Texas A&M University, 2019 </p>
-
-<p  style='margin-left:.0in;font-size:12.0pt; line-height: 1.5;'> <b>M.S. Industrial & Systems Engineering</b>, Oakland University, 2008 </p>
-
-<p  style='margin-left:.0in;font-size:12.0pt; line-height: 1.5;'> <b>B.S. Mechanical Engineering</b>, The Ohio State University, 2005 </p>
-
-	<br>
- <h3 style='margin-top:0.00in;color: #BA0C2F;font-size:14.0pt '> ACADEMIC EXPERIENCE </h3>
-    
-<p style='font-size:12.0pt'> <b> Fisher College of Business, The Ohio State University</b> </p>
-<p style='margin-top:-.1in;font-size:12.0pt'> <i> Assistant Professor </i> | 2022-present </p>
-
-<p style='font-size:12.0pt'> <b> A.B. Freeman School of Business, Tulane University</b> </p>
- <p style='margin-top:-.1in;font-size:12.0pt'> <i> Assistant Professor </i> | 2019-2022 </p>
-
-<br>
-
-<h3 style='margin-top:0.00in;color: #BA0C2F;font-size:14.0pt '> NEWS & UPDATES </h3>
-   
-
- 
-  
-<p style='font-size:12.0pt'> <b> Received the DSI Carol J. Latta Memorial Early Career Research Award at 2024 Annual DSI Meeting in Pheonix, USA. </b> | 2024 </p>
- 
- <ul style="font-size:12pt; line-height: 1.5;">
-       <li>   <a href="index_files/DSAWARD.jpg"> Photo 1 </a>
- </ul>
-	
-<p style='margin-top:0.25in;font-size:12.0pt'> <b> Received the INFORMS Information Systems Society Gordon B. Davis Young Scholar Award at 2024 Annual INFORMS Meeting in Seattle, USA. </b> | 2024 </p>
-<ul style="font-size:12pt; line-height: 1.5;">
-    <li>  <a href="https://fisher.osu.edu/news/mallipeddi-named-gordon-b.-davis-young-scholar-award-recipient"> Fisher News Coverage </a> 
-   <li>   <a href="index_files/AWARD.jpg"> Photo 1 </a>
-   <li>   <a href="index_files/AWARD2.jpg"> Photo 2 </a>
-
- </ul>
- 
-
- 
- <footer  align="center"><p  style='  font-size:10.0pt; color:#A7B1B7 '>&copy; 2023 Rakesh Mallipeddi </footer>
-
-</div>
-
-
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p class="fname">Rakesh Mallipeddi</p>
+      <p class="ftitle">Assistant Professor, Operations &amp; Business Analytics<br>Fisher College of Business, The Ohio State University</p>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:mallipeddi.1@osu.edu">Email</a>
+      <a href="https://fisher.osu.edu/people/mallipeddi.1" target="_blank" rel="noopener">Fisher Profile</a>
+      <a href="https://scholar.google.com/citations?user=dWTKDv8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2630173" target="_blank" rel="noopener">SSRN</a>
+      <a href="https://www.linkedin.com/in/rakesh-mallipeddi-7b3858b9" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <div class="footer-copy">© 2026 Rakesh Mallipeddi · Columbus, Ohio</div>
+  </div>
+</footer>
 
 </body>
 </html>
